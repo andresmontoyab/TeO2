@@ -13,4 +13,6 @@ public interface PredioService {
     Predio obtenerPrediosPorId(Long id);
 
     List<Predio> obtenerPrediosDisponibles();
+
+    void borrarPredio(Long id);
 }

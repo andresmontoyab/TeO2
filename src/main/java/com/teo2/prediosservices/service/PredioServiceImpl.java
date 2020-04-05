@@ -35,4 +35,9 @@ public class PredioServiceImpl implements PredioService{
     public List<Predio> obtenerPrediosDisponibles() {
         return predioRepository.findByDisponible(true);
     }
+
+    @Override
+    public void borrarPredio(Long id) {
+        predioRepository.deleteById(id);
+    }
 }
